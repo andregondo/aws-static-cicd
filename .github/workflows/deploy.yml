@@ -28,5 +28,5 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
       - name: Upload files to S3
-    run: |
-      aws s3 cp . s3://frontend.kayron-kiara.shop/ --recursive
+        run: |
+          aws s3 cp . s3://frontend.kayron-kiara.shop/ --recursive
