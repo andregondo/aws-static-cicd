@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Install AWS CLI
-        uses: uses: unfor19/install-aws-cli-action@v1
+        uses: unfor19/install-aws-cli-action@v1
         with:
           version: 2                         # default
           verbose: false                     # default
@@ -30,4 +30,3 @@ jobs:
       - name: Upload files to S3
     run: |
       aws s3 cp . s3://frontend.kayron-kiara.shop/ --recursive
-      
